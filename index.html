@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
   <head>
     <title>Slider</title>
     <meta charset="UTF-8" />
@@ -7,87 +8,85 @@
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
+
   <body>
-    <section class="slider" id="slider">
+
+    <div class="slider__container">
       <button class="btn btn-icon slider__button-back" id="back-btn">
         <img src="./left-chevron.svg" alt="chevron icon" />
       </button>
+
+      <section class="slider" id="slider">
+
+        <ul class="slider__items" id="track">
+          <li class="slider__item current">
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__avatar">
+                  <img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="avatar" />
+                </figure>
+
+                <h2 class="card__title">John Doe</h2>
+              </div>
+
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  possimus animi assumenda consequatur beatae aperiam sapiente
+                  blanditiis rem architecto quisquam. Possimus consequuntur
+                  quaerat ducimus pariatur quod aliquid molestias saepe est?
+                </p>
+              </div>
+            </article>
+          </li>
+
+          <li class="slider__item">
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__avatar">
+                  <img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="avatar" />
+                </figure>
+
+                <h2 class="card__title">Jhon Doe</h2>
+              </div>
+
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  possimus animi assumenda consequatur beatae aperiam sapiente
+                  blanditiis rem architecto quisquam. Possimus consequuntur
+                  quaerat ducimus pariatur quod aliquid molestias saepe est?
+                </p>
+              </div>
+            </article>
+          </li>
+          <li class="slider__item">
+            <article class="card">
+              <div class="card__header">
+                <figure class="card__avatar">
+                  <img src="https://xsgames.co/randomusers/avatar.php?g=male" alt="avatar" />
+                </figure>
+
+                <h2 class="card__title">Jane Doe</h2>
+              </div>
+
+              <div class="card__body">
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
+                  possimus animi assumenda consequatur beatae aperiam sapiente
+                  blanditiis rem architecto quisquam. Possimus consequuntur
+                  quaerat ducimus pariatur quod aliquid molestias saepe est?
+                </p>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </section>
+
       <button class="btn btn-icon slider__button-fwd" id="fwd-btn">
         <img src="./right-chevron.svg" alt="chevron icon" />
       </button>
-
-      <ul class="slider__items" id="track">
-        <li class="slider__item current">
-          <article class="card">
-            <div class="card__header">
-              <figure class="card__avatar">
-                <img
-                  src="https://xsgames.co/randomusers/avatar.php?g=male"
-                  alt="avatar"
-                />
-              </figure>
-
-              <h2 class="card__title">John Doe</h2>
-            </div>
-
-            <div class="card__body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                possimus animi assumenda consequatur beatae aperiam sapiente
-                blanditiis rem architecto quisquam. Possimus consequuntur
-                quaerat ducimus pariatur quod aliquid molestias saepe est?
-              </p>
-            </div>
-          </article>
-        </li>
-
-        <li class="slider__item">
-          <article class="card">
-            <div class="card__header">
-              <figure class="card__avatar">
-                <img
-                  src="https://xsgames.co/randomusers/avatar.php?g=male"
-                  alt="avatar"
-                />
-              </figure>
-
-              <h2 class="card__title">Jhon Doe</h2>
-            </div>
-
-            <div class="card__body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                possimus animi assumenda consequatur beatae aperiam sapiente
-                blanditiis rem architecto quisquam. Possimus consequuntur
-                quaerat ducimus pariatur quod aliquid molestias saepe est?
-              </p>
-            </div>
-          </article>
-        </li>
-        <li class="slider__item">
-          <article class="card">
-            <div class="card__header">
-              <figure class="card__avatar">
-                <img
-                  src="https://xsgames.co/randomusers/avatar.php?g=male"
-                  alt="avatar"
-                />
-              </figure>
-
-              <h2 class="card__title">Jane Doe</h2>
-            </div>
-
-            <div class="card__body">
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi
-                possimus animi assumenda consequatur beatae aperiam sapiente
-                blanditiis rem architecto quisquam. Possimus consequuntur
-                quaerat ducimus pariatur quod aliquid molestias saepe est?
-              </p>
-            </div>
-          </article>
-        </li>
-      </ul>
-    </section>
+    </div>
   </body>
+
 </html>

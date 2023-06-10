@@ -33,36 +33,26 @@ body {
   line-height: 1.625;
 }
 
+.slider__container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2rem;
+}
+
 .slider {
-  position: relative;
-  width: 75%;
+  width: min(75%, 550px);
   height: fit-content;
-  margin: max(5vh, 3rem) auto;
+  overflow: hidden;
 }
 
-.slider__button-back,
-.slider__button-fwd {
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
-.slider__button-back {
-  left: -10%;
-}
-
-.slider__button-fwd {
-  right: -10%;
-}
 
 .slider__items {
   display: flex;
-  align-items: stretch;
-  overflow: scroll;
-  width: 100%;
   margin: 0;
   padding: 0;
   list-style: none;
+  transition: transform 0.4s ease-in-out;
 }
 
 .slider__item {
